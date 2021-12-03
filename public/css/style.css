@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  overflow: hidden;
+}
+
+#masterWrap {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+
+#panelWrap {
+  width: 100%;
+  height: 100%;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  
+  /* display: flex; */
+  /* align-content: center; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* font-weight: 700; */
+  position: relative;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  position: relative;
+  background-color: black;
+  margin: 12px;
+  cursor: pointer;
+}
+
+.dots {
+  position: absolute;
+  z-index: 100;
+  top: 50%;
+  right: 16px;
+}
+
+
+#downArrow {
+  background:black;
+  border-radius: 50%;
+  bottom: 12px;
+}
+
+#upArrow {
+  background:black;
+  border-radius: 50%;
+  top: 12px;
+}
+
+.arrow {
+  position: absolute;
+  z-index: 100;
+  right: 12px;
+  cursor: pointer;
+  opacity: 0.75;
+  width: 40px;
+  height: 40px;
+  stroke-width: 8px;
+  stroke: white;
+  fill: transparent;
+}
+
+.toolTips {
+  position: absolute;
+  top: 50%;
+  right: 50px;
+  z-index: 1000;
+}
+@media (hover:none) {
+  .toolTips, p.navDotInfo  {
+  visibility: hidden;
+}
+}
+.toolTip {
+  opacity: 0;
+  text-align: right;
+  height: 12px;
+  margin: 12px 0;
+  line-height: 12px;
+  left: 10px;
+  top: 10px;
+}
+
+
+p.navDotInfo {
+  position: absolute;
+  bottom: 5px;
+  z-index: 225;
+  width: 100%;
+  text-align: center;
+  max-width: 5000px;
+  font-size: 0.875em;
+}
+
+
+@media (min-width: 700px) {
+  .iconWrap {
+    width: 600px;
+  }
+}
+.icon {
+  text-align: center;
+  width: 150px;
+  float: left;
+}
+
+.icon svg {
+  width: 50px;
+  height: 50px;
+  margin: 6px 0;
+  overflow: visible;
+}
+
+@media (max-width: 480px) {
+
+}
